@@ -1,0 +1,53 @@
+html {
+    --scale: 0.5;
+}
+
+@font-face {
+    font-family: Johnston100;
+    src: url("Johnston100-Medium.ttf");
+}
+
+.london-underground-logo {
+    position: absolute;
+    width: calc(100rem * var(--scale));
+    height: calc(81.24rem * var(--scale));
+}
+.ring-wrapper {
+    position: absolute;
+    left: calc(9.88rem * var(--scale));
+    width: calc(81.24rem * var(--scale));
+    height: calc(81.24rem * var(--scale));
+}
+.ring {
+    position: absolute;
+    width: calc(52.42rem * var(--scale));
+    height: calc(52.42rem * var(--scale));
+    border-radius: calc(52.42rem * var(--scale));
+
+    border: calc(14.42rem * var(--scale)) solid #ca4135;
+}
+
+.bar {
+    position: absolute;
+    top: calc(32.39rem * var(--scale));
+    width: 100%;
+    height: calc(16.46rem * var(--scale));
+    
+    background-color: #263978;
+    color: #fffffe
+}
+.bar[double-line=true] {
+    top: calc(24.12rem * var(--scale));
+    height: calc(32.92rem * var(--scale));
+}
+.station-name {
+    position: absolute;
+    width: fit-content;
+    top: 51.5%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Johnston100;
+    letter-spacing: calc(-0.7rem * var(--scale));
+    font-size: calc(12.7rem * var(--scale));
+}
